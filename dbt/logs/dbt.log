@@ -1,0 +1,215 @@
+[0m14:35:56.955677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1084a8eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a8611f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a861520>]}
+
+
+============================== 14:35:56.957846 | 12481a43-a54a-4026-956d-95f78d33a0f3 ==============================
+[0m14:35:56.957846 [info ] [MainThread]: Running with dbt=1.10.13
+[0m14:35:56.958099 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'debug': 'False', 'partial_parse': 'True', 'use_colors': 'True', 'quiet': 'False', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'cache_selected_only': 'False', 'profiles_dir': '/Users/lucadhont/.dbt', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'write_json': 'True', 'invocation_command': 'dbt init .', 'warn_error': 'None', 'printer_width': '80', 'target_path': 'None', 'log_cache_events': 'False', 'version_check': 'True', 'log_format': 'default', 'static_parser': 'True', 'empty': 'None', 'log_path': 'logs'}
+[0m14:36:05.217949 [debug] [MainThread]: Starter project path: /Users/lucadhont/Documents/openpl_v2/venv/lib/python3.9/site-packages/dbt/include/starter_project
+[0m14:36:05.228069 [info ] [MainThread]: 
+Your new dbt project "openpl" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:36:05.228884 [info ] [MainThread]: Setting up your profile.
+[0m14:36:32.657784 [info ] [MainThread]: Profile openpl written to /Users/lucadhont/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:36:32.662598 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 35.73794, "process_in_blocks": "0", "process_kernel_time": 0.117764, "process_mem_max_rss": "100401152", "process_out_blocks": "0", "process_user_time": 0.675635}
+[0m14:36:32.663445 [debug] [MainThread]: Command `dbt init` succeeded at 14:36:32.663309 after 35.74 seconds
+[0m14:36:32.663974 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1084a8eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a7d2730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060601c0>]}
+[0m14:36:32.664535 [debug] [MainThread]: Flushing usage events
+[0m14:36:33.274921 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:36:40.335155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051a0c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106222190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062224c0>]}
+
+
+============================== 14:36:40.336787 | 662e7b45-c073-4fdd-bd49-f43494ec1b68 ==============================
+[0m14:36:40.336787 [info ] [MainThread]: Running with dbt=1.10.13
+[0m14:36:40.337043 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'write_json': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'profiles_dir': '/Users/lucadhont/.dbt', 'invocation_command': 'dbt debug', 'printer_width': '80', 'log_cache_events': 'False', 'target_path': 'None', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'introspect': 'True', 'version_check': 'True', 'log_format': 'default', 'no_print': 'None', 'partial_parse': 'True', 'log_path': 'logs', 'debug': 'False', 'use_colors': 'True'}
+[0m14:36:40.341728 [info ] [MainThread]: dbt version: 1.10.13
+[0m14:36:40.341880 [info ] [MainThread]: python version: 3.9.6
+[0m14:36:40.342101 [info ] [MainThread]: python path: /Users/lucadhont/Documents/openpl_v2/venv/bin/python3
+[0m14:36:40.342313 [info ] [MainThread]: os info: macOS-15.2-arm64-arm-64bit
+[0m14:36:40.366127 [info ] [MainThread]: Using profiles dir at /Users/lucadhont/.dbt
+[0m14:36:40.366376 [info ] [MainThread]: Using profiles.yml file at /Users/lucadhont/.dbt/profiles.yml
+[0m14:36:40.366525 [info ] [MainThread]: Using dbt_project.yml file at /Users/lucadhont/Documents/openpl_v2/dbt/dbt_project.yml
+[0m14:36:40.366700 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m14:36:40.367399 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.061536957, "process_in_blocks": "0", "process_kernel_time": 0.061249, "process_mem_max_rss": "100024320", "process_out_blocks": "0", "process_user_time": 0.563263}
+[0m14:36:40.367580 [debug] [MainThread]: Command `dbt debug` failed at 14:36:40.367540 after 0.06 seconds
+[0m14:36:40.367731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051a0c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062b4940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1061fd130>]}
+[0m14:36:40.367895 [debug] [MainThread]: Flushing usage events
+[0m14:36:40.909660 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:41:05.414605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ce4c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10909b220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10909b550>]}
+
+
+============================== 14:41:05.416745 | 6fa9fdcb-762f-4e5f-a060-69dbbe57d163 ==============================
+[0m14:41:05.416745 [info ] [MainThread]: Running with dbt=1.10.13
+[0m14:41:05.417016 [debug] [MainThread]: running dbt with arguments {'log_path': 'logs', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'empty': 'None', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'debug': 'False', 'quiet': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'introspect': 'True', 'printer_width': '80', 'partial_parse': 'True', 'use_colors': 'True', 'log_format': 'default', 'profiles_dir': '/Users/lucadhont/.dbt', 'version_check': 'True', 'no_print': 'None', 'indirect_selection': 'eager', 'static_parser': 'True', 'cache_selected_only': 'False', 'invocation_command': 'dbt debug', 'warn_error': 'None'}
+[0m14:41:05.422938 [info ] [MainThread]: dbt version: 1.10.13
+[0m14:41:05.423112 [info ] [MainThread]: python version: 3.9.6
+[0m14:41:05.423271 [info ] [MainThread]: python path: /Users/lucadhont/Documents/openpl_v2/venv/bin/python3
+[0m14:41:05.423419 [info ] [MainThread]: os info: macOS-15.2-arm64-arm-64bit
+[0m14:41:05.457758 [info ] [MainThread]: Using profiles dir at /Users/lucadhont/.dbt
+[0m14:41:05.457996 [info ] [MainThread]: Using profiles.yml file at /Users/lucadhont/.dbt/profiles.yml
+[0m14:41:05.458141 [info ] [MainThread]: Using dbt_project.yml file at /Users/lucadhont/Documents/openpl_v2/dbt/dbt_project.yml
+[0m14:41:05.458318 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m14:41:05.458966 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.07509363, "process_in_blocks": "0", "process_kernel_time": 0.072519, "process_mem_max_rss": "99221504", "process_out_blocks": "0", "process_user_time": 0.556421}
+[0m14:41:05.459219 [debug] [MainThread]: Command `dbt debug` failed at 14:41:05.459156 after 0.08 seconds
+[0m14:41:05.459411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ce4c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10914ad60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109074ac0>]}
+[0m14:41:05.459705 [debug] [MainThread]: Flushing usage events
+[0m14:41:06.053717 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:53:28.359945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10737ccd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1083ff190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1083ff4c0>]}
+
+
+============================== 14:53:28.362191 | b1f1d8be-5438-40a8-8095-5323d4d980a9 ==============================
+[0m14:53:28.362191 [info ] [MainThread]: Running with dbt=1.10.13
+[0m14:53:28.362453 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'debug': 'False', 'printer_width': '80', 'warn_error': 'None', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'static_parser': 'True', 'partial_parse': 'True', 'version_check': 'True', 'profiles_dir': '/Users/lucadhont/.dbt', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'target_path': 'None', 'quiet': 'False', 'log_path': 'logs', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'empty': 'None', 'no_print': 'None', 'introspect': 'True', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m14:53:28.370273 [info ] [MainThread]: dbt version: 1.10.13
+[0m14:53:28.370444 [info ] [MainThread]: python version: 3.9.6
+[0m14:53:28.370581 [info ] [MainThread]: python path: /Users/lucadhont/Documents/openpl_v2/venv/bin/python3
+[0m14:53:28.370711 [info ] [MainThread]: os info: macOS-15.2-arm64-arm-64bit
+[0m14:53:28.406410 [info ] [MainThread]: Using profiles dir at /Users/lucadhont/.dbt
+[0m14:53:28.406658 [info ] [MainThread]: Using profiles.yml file at /Users/lucadhont/.dbt/profiles.yml
+[0m14:53:28.406808 [info ] [MainThread]: Using dbt_project.yml file at /Users/lucadhont/Documents/openpl_v2/dbt/dbt_project.yml
+[0m14:53:28.406991 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m14:53:28.407762 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.07918575, "process_in_blocks": "0", "process_kernel_time": 0.098466, "process_mem_max_rss": "100483072", "process_out_blocks": "0", "process_user_time": 0.549534}
+[0m14:53:28.407953 [debug] [MainThread]: Command `dbt debug` failed at 14:53:28.407911 after 0.08 seconds
+[0m14:53:28.408106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10737ccd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1083d9190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1083a7e20>]}
+[0m14:53:28.408270 [debug] [MainThread]: Flushing usage events
+[0m14:53:29.006212 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:54:08.096302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076f1c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108771190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087714c0>]}
+
+
+============================== 14:54:08.098239 | 69f4c498-ff14-4a70-986f-68da274b1081 ==============================
+[0m14:54:08.098239 [info ] [MainThread]: Running with dbt=1.10.13
+[0m14:54:08.098510 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'version_check': 'True', 'use_experimental_parser': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'quiet': 'False', 'printer_width': '80', 'use_colors': 'True', 'no_print': 'None', 'log_cache_events': 'False', 'log_path': 'logs', 'invocation_command': 'dbt debug', 'partial_parse': 'True', 'debug': 'False', 'empty': 'None', 'profiles_dir': '/Users/lucadhont/.dbt', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'write_json': 'True', 'introspect': 'True', 'target_path': 'None'}
+[0m14:54:08.102499 [info ] [MainThread]: dbt version: 1.10.13
+[0m14:54:08.102686 [info ] [MainThread]: python version: 3.9.6
+[0m14:54:08.102828 [info ] [MainThread]: python path: /Users/lucadhont/Documents/openpl_v2/venv/bin/python3
+[0m14:54:08.103078 [info ] [MainThread]: os info: macOS-15.2-arm64-arm-64bit
+[0m14:54:08.128765 [info ] [MainThread]: Using profiles dir at /Users/lucadhont/.dbt
+[0m14:54:08.129033 [info ] [MainThread]: Using profiles.yml file at /Users/lucadhont/.dbt/profiles.yml
+[0m14:54:08.129183 [info ] [MainThread]: Using dbt_project.yml file at /Users/lucadhont/Documents/openpl_v2/dbt/dbt_project.yml
+[0m14:54:08.129359 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m14:54:08.130043 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.06621879, "process_in_blocks": "0", "process_kernel_time": 0.064345, "process_mem_max_rss": "99401728", "process_out_blocks": "0", "process_user_time": 0.56325}
+[0m14:54:08.130227 [debug] [MainThread]: Command `dbt debug` failed at 14:54:08.130188 after 0.07 seconds
+[0m14:54:08.130385 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076f1c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108805940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10874b130>]}
+[0m14:54:08.130554 [debug] [MainThread]: Flushing usage events
+[0m14:54:08.684903 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:55:56.224499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103039c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1040b81c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1040b84f0>]}
+
+
+============================== 14:55:56.226172 | d96a063f-328a-4709-9245-312abe8b57f1 ==============================
+[0m14:55:56.226172 [info ] [MainThread]: Running with dbt=1.10.13
+[0m14:55:56.226445 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'no_print': 'None', 'log_format': 'default', 'partial_parse': 'True', 'version_check': 'True', 'introspect': 'True', 'quiet': 'False', 'use_colors': 'True', 'debug': 'False', 'warn_error': 'None', 'empty': 'None', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'printer_width': '80', 'fail_fast': 'False', 'profiles_dir': '/Users/lucadhont/.dbt', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'static_parser': 'True', 'cache_selected_only': 'False', 'invocation_command': 'dbt debug', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m14:55:56.230051 [info ] [MainThread]: dbt version: 1.10.13
+[0m14:55:56.230213 [info ] [MainThread]: python version: 3.9.6
+[0m14:55:56.230349 [info ] [MainThread]: python path: /Users/lucadhont/Documents/openpl_v2/venv/bin/python3
+[0m14:55:56.230483 [info ] [MainThread]: os info: macOS-15.2-arm64-arm-64bit
+[0m14:55:56.253636 [info ] [MainThread]: Using profiles dir at /Users/lucadhont/.dbt
+[0m14:55:56.253882 [info ] [MainThread]: Using profiles.yml file at /Users/lucadhont/.dbt/profiles.yml
+[0m14:55:56.254029 [info ] [MainThread]: Using dbt_project.yml file at /Users/lucadhont/Documents/openpl_v2/dbt/dbt_project.yml
+[0m14:55:56.254209 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m14:55:56.254939 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.060315873, "process_in_blocks": "0", "process_kernel_time": 0.061029, "process_mem_max_rss": "100220928", "process_out_blocks": "0", "process_user_time": 0.557563}
+[0m14:55:56.255290 [debug] [MainThread]: Command `dbt debug` failed at 14:55:56.255227 after 0.06 seconds
+[0m14:55:56.255468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103039c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104080d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104080100>]}
+[0m14:55:56.255648 [debug] [MainThread]: Flushing usage events
+[0m14:55:56.861471 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:56:19.125371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106019be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10729a190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10729a4c0>]}
+
+
+============================== 14:56:19.127318 | e5e15477-cc9a-4c1d-bb44-5cb7056c412d ==============================
+[0m14:56:19.127318 [info ] [MainThread]: Running with dbt=1.10.13
+[0m14:56:19.127594 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'write_json': 'True', 'version_check': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'no_print': 'None', 'invocation_command': 'dbt debug --profiles-dir /Users/lucadhont/.dbt', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'profiles_dir': '/Users/lucadhont/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'printer_width': '80', 'log_path': 'logs', 'target_path': 'None', 'static_parser': 'True', 'quiet': 'False', 'empty': 'None', 'log_format': 'default'}
+[0m14:56:19.132093 [info ] [MainThread]: dbt version: 1.10.13
+[0m14:56:19.132322 [info ] [MainThread]: python version: 3.9.6
+[0m14:56:19.132742 [info ] [MainThread]: python path: /Users/lucadhont/Documents/openpl_v2/venv/bin/python3
+[0m14:56:19.133178 [info ] [MainThread]: os info: macOS-15.2-arm64-arm-64bit
+[0m14:56:19.161560 [info ] [MainThread]: Using profiles dir at /Users/lucadhont/.dbt
+[0m14:56:19.161821 [info ] [MainThread]: Using profiles.yml file at /Users/lucadhont/.dbt/profiles.yml
+[0m14:56:19.161971 [info ] [MainThread]: Using dbt_project.yml file at /Users/lucadhont/Documents/openpl_v2/dbt/dbt_project.yml
+[0m14:56:19.162175 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m14:56:19.162856 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.07040275, "process_in_blocks": "0", "process_kernel_time": 0.063844, "process_mem_max_rss": "99352576", "process_out_blocks": "0", "process_user_time": 0.552382}
+[0m14:56:19.163054 [debug] [MainThread]: Command `dbt debug` failed at 14:56:19.163011 after 0.07 seconds
+[0m14:56:19.163221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106019be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107250e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a2791c0>]}
+[0m14:56:19.163388 [debug] [MainThread]: Flushing usage events
+[0m14:56:19.731301 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:57:03.044552 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103ab0cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b30190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b304c0>]}
+
+
+============================== 14:57:03.046198 | c3bd36b7-3059-46fe-8e48-802909cb1a3c ==============================
+[0m14:57:03.046198 [info ] [MainThread]: Running with dbt=1.10.13
+[0m14:57:03.046456 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'warn_error': 'None', 'target_path': 'None', 'fail_fast': 'False', 'introspect': 'True', 'log_format': 'default', 'version_check': 'True', 'printer_width': '80', 'profiles_dir': '/Users/lucadhont/.dbt', 'write_json': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'indirect_selection': 'eager', 'empty': 'None', 'no_print': 'None', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'partial_parse': 'True', 'use_colors': 'True', 'cache_selected_only': 'False'}
+[0m14:57:03.050058 [info ] [MainThread]: dbt version: 1.10.13
+[0m14:57:03.050219 [info ] [MainThread]: python version: 3.9.6
+[0m14:57:03.050357 [info ] [MainThread]: python path: /Users/lucadhont/Documents/openpl_v2/venv/bin/python3
+[0m14:57:03.050490 [info ] [MainThread]: os info: macOS-15.2-arm64-arm-64bit
+[0m14:57:03.073341 [info ] [MainThread]: Using profiles dir at /Users/lucadhont/.dbt
+[0m14:57:03.073596 [info ] [MainThread]: Using profiles.yml file at /Users/lucadhont/.dbt/profiles.yml
+[0m14:57:03.073738 [info ] [MainThread]: Using dbt_project.yml file at /Users/lucadhont/Documents/openpl_v2/dbt/dbt_project.yml
+[0m14:57:03.074114 [info ] [MainThread]: adapter type: postgres
+[0m14:57:03.074259 [info ] [MainThread]: adapter version: 1.9.1
+[0m14:57:03.074398 [info ] [MainThread]: Configuration:
+[0m14:57:03.074527 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:57:03.074658 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m14:57:03.074785 [info ] [MainThread]: Required dependencies:
+[0m14:57:03.074939 [debug] [MainThread]: Executing "git --help"
+[0m14:57:03.085107 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:57:03.085644 [debug] [MainThread]: STDERR: "b''"
+[0m14:57:03.085906 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:57:03.086091 [info ] [MainThread]: Connection:
+[0m14:57:03.086272 [info ] [MainThread]:   host: localhost
+[0m14:57:03.086404 [info ] [MainThread]:   port: 5432
+[0m14:57:03.086696 [info ] [MainThread]:   user: openpl
+[0m14:57:03.086824 [info ] [MainThread]:   database: openpl
+[0m14:57:03.086947 [info ] [MainThread]:   schema: public
+[0m14:57:03.087072 [info ] [MainThread]:   connect_timeout: 10
+[0m14:57:03.087195 [info ] [MainThread]:   role: None
+[0m14:57:03.087317 [info ] [MainThread]:   search_path: None
+[0m14:57:03.087439 [info ] [MainThread]:   keepalives_idle: 0
+[0m14:57:03.087561 [info ] [MainThread]:   sslmode: None
+[0m14:57:03.087683 [info ] [MainThread]:   sslcert: None
+[0m14:57:03.087805 [info ] [MainThread]:   sslkey: None
+[0m14:57:03.087929 [info ] [MainThread]:   sslrootcert: None
+[0m14:57:03.088051 [info ] [MainThread]:   application_name: dbt
+[0m14:57:03.088173 [info ] [MainThread]:   retries: 1
+[0m14:57:03.088542 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m14:57:03.135454 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m14:57:03.154966 [debug] [MainThread]: Using postgres connection "debug"
+[0m14:57:03.155149 [debug] [MainThread]: On debug: select 1 as id
+[0m14:57:03.155272 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:57:03.171653 [debug] [MainThread]: SQL status: SELECT 1 in 0.016 seconds
+[0m14:57:03.172058 [debug] [MainThread]: On debug: Close
+[0m14:57:03.172209 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m14:57:03.172359 [info ] [MainThread]: [31m1 check failed:[0m
+[0m14:57:03.172492 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/lucadhont/Documents/openpl_v2/dbt/dbt_project.yml> not found
+
+[0m14:57:03.173121 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.16028129, "process_in_blocks": "0", "process_kernel_time": 0.095368, "process_mem_max_rss": "110182400", "process_out_blocks": "0", "process_user_time": 0.600635}
+[0m14:57:03.173304 [debug] [MainThread]: Command `dbt debug` failed at 14:57:03.173266 after 0.16 seconds
+[0m14:57:03.173449 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:57:03.173593 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103ab0cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050d7e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050d7910>]}
+[0m14:57:03.173778 [debug] [MainThread]: Flushing usage events
+[0m14:57:03.739060 [debug] [MainThread]: An error was encountered while trying to flush usage events

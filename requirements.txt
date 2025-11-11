@@ -1,0 +1,6 @@
+requests
+zipfile
+io
+psycopg2
+dbt-core
+dbt-postgres
