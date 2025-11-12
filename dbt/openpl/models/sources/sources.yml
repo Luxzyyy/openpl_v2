@@ -1,0 +1,12 @@
+sources:
+  - name: openpl_raw
+    description: raw source containing al open powerlifting data
+    database: openpl
+    schema: public
+    tables:
+      - name: openpl_raw
+        description: >
+          source table for all open powerlifting data
+
+
+
