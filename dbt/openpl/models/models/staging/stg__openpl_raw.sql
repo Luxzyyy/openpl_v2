@@ -6,7 +6,7 @@ select
     cast("{{ text_column }}" as text) as {{ text_column }},
     {% endfor %}
     {% for int_column in int_columns %}
-    cast("{{ int_column }}" as integer) as {{ int_column }},
+    cast("{{ int_column }}" as double precision) as {{ int_column }},
     {% endfor %}
     cast("Date" as date) as Date
 from {{ source('openpl_raw', 'openpl_raw') }}
