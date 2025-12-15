@@ -34,7 +34,7 @@ conn = psycopg2.connect(
 cursor = conn.cursor()
 
 # Step 3: Open the ZIP and find the CSV
-with zipfile.ZipFile(zip_path) as zip_file:
+with zipfile.ZipFile(io.BytesIO(response.content)) as zip_file:
     # Automatically find the first CSV inside the ZIP
     csv_filename = next((f for f in zip_file.namelist() if f.endswith(".csv")), None)
     if csv_filename is None:
