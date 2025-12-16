@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 # PostgreSQL connection info
 load_dotenv()
-host = os.getenv("postgres_host")
+host = os.getenv("postgres_host", "db")
 database = os.getenv("postgres_dbname")
 user = os.getenv("postgres_user")
 password = os.getenv("postgres_password")

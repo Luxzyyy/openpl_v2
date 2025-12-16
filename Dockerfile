@@ -5,6 +5,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY ../../pipeline /app/pipeline
+COPY pipeline /app/pipeline
+COPY dbt /app/dbt
 
-CMD ["python", "pipeline/load_openpl.py"]
+CMD ["python", "-m", "pipeline.main"]
