@@ -3,15 +3,16 @@ import zipfile
 import io
 import psycopg2
 import os
+import time
 from dotenv import load_dotenv
 
 
 # PostgreSQL connection info
 load_dotenv()
-host = os.getenv("postgres_host", "db")
-database = os.getenv("postgres_dbname")
-user = os.getenv("postgres_user")
-password = os.getenv("postgres_password")
+host = os.getenv("DB_HOST", "db")
+database = os.getenv("DB_NAME")
+user = os.getenv("DB_USER")
+password = os.getenv("DB_PASSWORD")
 table_name = "openpl_raw"
 chunk_size = 500_000  # number of rows per batch
 
@@ -24,14 +25,21 @@ response = requests.get(url, stream=True)
 response.raise_for_status()
 
 
-# Step 2: Connect to PostgreSQL
-conn = psycopg2.connect(
-    host=host,
-    database=database,
-    user=user,
-    password=password
-)
-cursor = conn.cursor()
+# Step 2: Connect to PostgreSQL, retry if db service still booting
+for i in range(60):
+    try:
+        conn = psycopg2.connect(
+            host=host,
+            database=database,
+            user=user,
+            password=password
+        )
+        cursor = conn.cursor()
+        break
+    except psycopg2.OperationalError:
+        time.sleep(5)
+else:
+    raise RuntimeError("Database not available")
 
 # Step 3: Open the ZIP and find the CSV
 with zipfile.ZipFile(io.BytesIO(response.content)) as zip_file:
