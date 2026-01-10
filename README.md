@@ -1,7 +1,7 @@
 # OpenPowerlifting Analytics
 **End-to-End Data Engineering & BI Project**
 
-This repository showcases an end-to-end analytics platform built on top of the [OpenPowerlifting](https://www.openpowerlifting.org/) dataset. 
+This repository showcases an end-to-end analytics project built on top of the [OpenPowerlifting](https://www.openpowerlifting.org/) dataset. 
 
 ---
 
